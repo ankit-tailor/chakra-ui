@@ -1,71 +1,139 @@
-## 20-06-2022
+## 08-07-2022
 
-`@chakra-ui/react@2.2.2`
+`@chakra-ui/react@2.2.3`
 
-- Remove internal usage of createBreakpoints function
+**Accordion** `v2.0.5`
 
-**Skeleton** `v2.0.7`
+- export useStyles with component namespace
 
-- extend doc for `fadeDuration` prop
-- Remove internal usage of createBreakpoints function
+**Alert** `v2.0.3`
 
-**Color Mode** `v2.1.0`
+- export useStyles with component namespace
 
-- Check if the MediaQueryList object supports the addEventListener() method, else
-  fallback to the legacy .addListener() method.
+**Avatar** `v2.0.4`
 
-**Cli** `v2.1.1`
+- export useStyles with component namespace
 
-- Add --no-format option
-- Fix issue where CLI crashed due to lodash throttle dependency
+**Breadcrumb** `v2.0.3`
 
-**Toast** `v3.0.0`
+- export useStyles with component namespace
 
-- Move `@chakra-ui/system` to peer dependency
+**Editable** `v2.0.3`
 
-**System** `v2.2.0`
+- export useStyles with component namespace
 
-- Extract and export `getToken` function from `useToken`
-- Improve parameter types for `useToken`- Remove internal usage of createBreakpoints function
+**Form Control** `v2.0.3`
 
-**Media Query** `v3.1.1`
+- export useStyles with component namespace
 
-- Remove internal usage of createBreakpoints function
+**Menu** `v2.0.5`
 
-**Styled System** `v2.2.1`
+- export useStyles with component namespace
 
-- Remove internal usage of createBreakpoints function
+**Number Input** `v2.0.3`
 
-**Theme** `v2.1.1`
+- export useStyles with component namespace
 
-- Remove internal usage of createBreakpoints function
+**Popover** `v2.0.3`
+
+- export useStyles with component namespace
+- add displayName to components using forwardRef
+- Do not open the popover with a mouse click if trigger is hover.
+
+**Progress** `v2.0.4`
+
+- export useStyles with component namespace
+
+**Slider** `v2.0.3`
+
+- export useStyles with component namespace
+
+**Stat** `v2.0.3`
+
+- export useStyles with component namespace
+
+**Table** `v2.0.3`
+
+- export useStyles with component namespace
+
+**Tabs** `v2.0.5`
+
+- export useStyles with component namespace
+
+**Tag** `v2.0.3`
+
+- export useStyles with component namespace
+
+**Gatsby Starter Default** `v1.0.9`
+
+- Tweak eslintrc
+
+**Babel Plugin** `v1.0.4`
+
+- Tweak eslintrc
+
+**Cra Template** `v2.0.3`
+
+- Tweak eslintrc
+
+**Image** `v2.0.4`
+
+- add displayName to components using forwardRef
+
+**Modal** `v2.1.1`
+
+- add displayName to components using forwardRef
+
+**Cli** `v2.1.2`
+
+- Fix importing of the default exported theme
+- Update dependencies
+
+**Utils** `v2.0.3`
+
+- fix(utils): avoid TypeError in getCSSVar when theme is an empty object
+- Fix issue where get-focusables causes excessive repaint due to computed style
+  calls
+
+**Chakra Nextjs Ts** `v2.0.9`
+
+- Update dependencies
+
+**Transition** `v2.0.3`
+
+- Transition: Fix emitted types that were incompatible with latest framer-motion
+  release
+
+**Theme** `v2.1.2`
+
 - Add border radius of zero to the default full size modal
 
-**Theme Tools** `v2.0.3`
+**React Env** `v2.0.3`
 
-- Remove internal usage of createBreakpoints function
+- Fix hydration issues when using Suspense
 
-**Layout** `v2.0.3`
+**Media Query** `v3.1.2`
 
-- SimpleGrid: Fix issue where `minChildWidth` doesn't work with size tokens
+- Fix hydration issues when using Suspense
 
-**Descendant** `v3.0.3`
+**Portal** `v2.0.3`
 
-- Apply type constraints to `useDescendants` hook for improved TypeScript 4.8 support
+- Fix hydration issues when using Suspense
 
-**Checkbox** `v2.1.1`
+**Layout** `v2.1.0`
 
-- fixed issue where switch cannot be toggled when text is selectedd
+- Add new highlight text component to emphasize any part of a string with the
+  `mark` tag.
 
-**Tooltip** `v2.0.3`
-
-- Avoid rendering multiple tooltips so that they are not appeared after opening a
-  modal
-
-**Radio** `v2.0.3`
-
-- Fix issue where radio doesn't show focus when interacting with keyboard
-
-**Modal** `v2.1.0`
-
-- Export `useDrawerContext` hook
+```jsx live=false
+<Text fontWeight="semibold">
+  <Highlight
+    query={['$48 per year ($4 per month)', '$5 per month', 'free']}
+    styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.100' }}
+  >
+    Cleanup.Picture is free unless you need better quality and process
+    hi-resolution images. The price is then $5 per month or $48 per year ($4 per
+    month) for processing images of any size.
+  </Highlight>
+</Text>
+```

@@ -1,16 +1,10 @@
 {
-  "version": "2.2.2",
-  "releaseUrl": "https://github.com/chakra-ui/chakra-ui/releases/tag/@chakra-ui/react@2.2.2",
+  "version": "2.2.3",
+  "releaseUrl": "https://github.com/chakra-ui/chakra-ui/releases/tag/@chakra-ui/react@2.2.3",
   "patches": [
-    "- Remove internal usage of createBreakpoints function \n",
-    "- extend doc for `fadeDuration` prop \n",
-    "- Add --no-format option \n",
-    "- Fix issue where CLI crashed due to lodash throttle dependency \n"
+    "- export useStyles with component namespace \n"
   ],
   "features": [
-    "- Check if the MediaQueryList object supports the addEventListener() method, else\nfallback to the legacy .addListener() method. \n",
-    "- Extract and export `getToken` function from `useToken`\n- Improve parameter types for `useToken`",
-    "- Remove internal usage of createBreakpoints function \n",
-    "- Export `useDrawerContext` hook \n"
+    "- Add new highlight text component to emphasize any part of a string with the\n`mark` tag.\n\n```jsx live=false\n<Text fontWeight=\"semibold\">\n  <Highlight\n    query={[\"$48 per year ($4 per month)\", \"$5 per month\", \"free\"]}\n    styles={{ px: \"2\", py: \"1\", rounded: \"full\", bg: \"teal.100\" }}\n  >\n    Cleanup.Picture is free unless you need better quality and process\n    hi-resolution images. The price is then $5 per month or $48 per year ($4 per\n    month) for processing images of any size.\n  </Highlight>\n</Text>\n``` \n"
   ]
 }
