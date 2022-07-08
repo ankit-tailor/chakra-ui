@@ -1,5 +1,16 @@
 # gatsby-starter-default
 
+## 1.0.9
+
+### Patch Changes
+
+- [#6267](https://github.com/chakra-ui/chakra-ui/pull/6267)
+  [`47478edbe`](https://github.com/chakra-ui/chakra-ui/commit/47478edbefe1a4b74421f5a64ea9953d2d867ff3)
+  Thanks [@itkrt2y](https://github.com/itkrt2y)! - Tweak eslintrc
+
+- Updated dependencies []:
+  - @chakra-ui/react@2.2.3
+
 ## 1.0.8
 
 ### Patch Changes
